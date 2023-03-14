@@ -271,10 +271,9 @@ def addBookTag(catalog, tag):
 
 def addBookTitle(catalog, title):
     # TODO lab 6, agregar el libro al map de titulos
-    """
-    Completar la descripcion de addBookTitle
-    """
-    pass
+    book_id= mp.get(catalog['bookIds'], bookid)
+    mp.put(catalog['titles'], book_id, title )
+    
 
 
 # ==============================
