@@ -271,6 +271,7 @@ def addBookTag(catalog, tag):
 
 def addBookTitle(catalog, title):
     # TODO lab 6, agregar el libro al map de titulos
+    bookid = catalog['goodreads_book_id']
     book_id= mp.get(catalog['bookIds'], bookid)
     mp.put(catalog['titles'], book_id, title )
     
